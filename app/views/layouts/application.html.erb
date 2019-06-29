@@ -1,28 +1,44 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
+
+<head>
     <title>Splurty</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
 
-  <body>
+</head>
+
+<body>
 
     <header class="row">
 
       <div class="col-3">
 
-        LOGO
+        <div class="circle">
 
+          <br />
+
+          YOLO
+
+          <br />
+
+          LOL
+
+          <br />
+
+          OMG
+
+        </div>
       </div>
 
       <div class="col-4">
 
-        Splurtingout unsolicited advice about entrepreneurship since 2016
+        Splurting out unsolicited advice about entrepreneurship since 2016
 
-      </div>
+     </div>
 
       <div class="col-5">
 
@@ -34,13 +50,11 @@
 
     </header>
 
-
     <br class="clear" />
 
+ <%= yield %>
 
-    <%= yield %>
 
-
-  </body>
+</body>
 
 </html>
